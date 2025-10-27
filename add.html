@@ -34,7 +34,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-null]{10}" placeholder="e.g., 9876543210" required>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 9876543210" required>
                     <small>Format: 10 digits (e.g., 9876543210)</small>
                 </div>
                 
@@ -59,7 +59,7 @@
                     <input type="text" id="workplace" name="workplace">
                 </div>
                 <div class="form-group">
-                    <label for="batch">Batch Year (Starting 1982):</label>
+                    <label for="batch">Batch Year (Starting 1986):</label>
                     <select id="batch" name="batch" required>
                         <option value="">Select your batch year</option>
                     </select>
@@ -79,5 +79,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
