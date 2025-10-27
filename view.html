@@ -28,10 +28,32 @@
         <section id="view-data">
             <h2>View Alumni Data Batch-wise</h2>
             <div class="form-group">
-                <label for="view-batch">Select Batch Year to View:</label>
-                <select id="view-batch" name="view-batch">
-                    <option value="">Select a batch year</option>
-                </select>
+               <label for="view-batch">Select Batch Year to View:</label>
+<select id="view-batch" name="view-batch">
+    <option value="">Select a batch year</option>
+</select>
+
+<script>
+    // Get the select element by its ID
+    const batchSelect = document.getElementById('view-batch');
+
+    // Define the start and end years
+    const startYear = 1986;
+    const endYear = 2025;
+
+    // Loop from the end year down to the start year (populates newest first)
+    for (let year = endYear; year >= startYear; year--) {
+        // Create a new <option> element
+        const option = document.createElement('option');
+        
+        // Set the option's value and display text
+        option.value = year;
+        option.textContent = year;
+        
+        // Add the new option to the select dropdown
+        batchSelect.appendChild(option);
+    }
+</script>
             </div>
             <button id="load-data-btn">Load Data</button>
 
@@ -52,3 +74,4 @@
 </body>
 
 </html>
+
