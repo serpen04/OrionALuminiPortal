@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Details - ORION (Hostel 7) Alumni Portal, JEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="ORION Hostel Logo" class="logo">
+            <h1>ORION (Hostel 7) Alumni Portal</h1>
+            <p>Jorhat Engineering College</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">&larr; Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="submit-data">
+            <h2>Submit Your Alumni Information</h2>
+            <form id="alumni-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-null]{10}" placeholder="e.g., 9876543210" required>
+                    <small>Format: 10 digits (e.g., 9876543210)</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g., name@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="branch">Branch:</label>
+                    <select id="branch" name="branch" required>
+                        <option value="">Select your branch</option>
+                        <option value="ME">Mechanical Engineering (ME)</option>
+                        <option value="CE">Civil Engineering (CE)</option>
+                        <option value="IE">Industrial Engineering (IE)</option>
+                        <option value="EE">Electrical Engineering (EE)</option>
+                        <option value="CSE">Computer Science & Engineering (CSE)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="workplace">Current Workplace:</label>
+                    <input type="text" id="workplace" name="workplace">
+                </div>
+                <div class="form-group">
+                    <label for="batch">Batch Year (Starting 1982):</label>
+                    <select id="batch" name="batch" required>
+                        <option value="">Select your batch year</option>
+                    </select>
+                </div>
+                <button type="submit">Submit Information</button>
+            </form>
+            <p id="form-message" class="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> ORION Hostel Alumni Portal, JEC. Developed by GUNJAN(2023-27).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Details - ORION (Hostel 7) Alumni Portal, JEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="ORION Hostel Logo" class="logo">
+            <h1>ORION (Hostel 7) Alumni Portal</h1>
+            <p>Jorhat Engineering College</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">&larr; Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="view-data">
+            <h2>View Alumni Data Batch-wise</h2>
+            <div class="form-group">
+                <label for="view-batch">Select Batch Year to View:</label>
+                <select id="view-batch" name="view-batch">
+                    <option value="">Select a batch year</option>
+                </select>
+            </div>
+            <button id="load-data-btn">Load Data</button>
+
+            <div id="alumni-list">
+                <p class="message" id="view-message">Select a batch and click "Load Data" to see results.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> ORION Hostel Alumni Portal, JEC. Developed by GUNJAN(2023-27).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
