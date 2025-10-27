@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!selectElement) return;
         
         const currentYear = new Date().getFullYear();
-        const startYear = 1982;
+        const startYear = 1986;
         
         const firstOption = selectElement.options[0];
         selectElement.innerHTML = '';
@@ -132,3 +132,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
