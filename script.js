@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         // 1. --- PASTE YOUR SUPABASE URL AND KEY HERE ---
-        const SUPABASE_URL = 'postgresql://postgres:Assam@123@db.pyiykmalduhdjyfhxmtn.supabase.co:5432/postgres'; 
-        const SUPABASE_ANON_KEY =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5aXlrbWFsZHVoZGp5Zmh4bXRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1NzY5ODYsImV4cCI6MjA3NzE1Mjk4Nn0.WoHb3WCzOhAP-aY5KFy4Zf0VB9nlRT5nsAT-43nODDY; 
+       // const SUPABASE_URL = 'postgresql://postgres:Assam@123@db.pyiykmalduhdjyfhxmtn.supabase.co:5432/postgres'; 
+       // const SUPABASE_ANON_KEY =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5aXlrbWFsZHVoZGp5Zmh4bXRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1NzY5ODYsImV4cCI6MjA3NzE1Mjk4Nn0.WoHb3WCzOhAP-aY5KFy4Zf0VB9nlRT5nsAT-43nODDY; 
         // ------------------------------------------------
 
         // Check if user forgot to add keys
