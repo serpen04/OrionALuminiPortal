@@ -60,9 +60,31 @@
                 </div>
                 <div class="form-group">
                     <label for="batch">Batch Year (Starting 1986):</label>
-                    <select id="batch" name="batch" required>
-                        <option value="">Select your batch year</option>
-                    </select>
+<select id="batch" name="batch" required>
+    <option value="">Select your batch year</option>
+</select>
+
+<script>
+    // Get the select element by its ID
+    const batchSelect = document.getElementById('batch');
+
+    // Define the start and end years
+    const startYear = 1996;
+    const endYear = 2025;
+
+    // Loop from the end year down to the start year
+    for (let year = endYear; year >= startYear; year--) {
+        // Create a new option element
+        const option = document.createElement('option');
+        
+        // Set the value and text for the option
+        option.value = year;
+        option.textContent = year;
+        
+        // Add the new option to the select element
+        batchSelect.appendChild(option);
+    }
+</script>
                 </div>
                 <button type="submit">Submit Information</button>
             </form>
@@ -80,3 +102,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
